@@ -1,0 +1,100 @@
+.back{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    right:0;
+}
+
+.header{
+    background-color: #05386B;
+    height: 8%;
+    width: 100%;
+    border-bottom: 4px solid  rgb(11, 30, 28) ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    color:#EDF5E1;
+    font-family: "Stencil Std, fantasy";
+    z-index: 2;
+}
+
+.container{
+    top:5%;
+    height:95%;
+    width: 100%;
+    position: fixed;
+    padding : 40px;
+}
+
+body .light{
+    background-color:white;
+    color:#05386B;
+    top:5%;
+    height:95%;
+    width: 100%;
+    position: fixed;
+    padding : 40px;
+    z-index: 1;
+}
+body .dark{
+    background-color:#0d3233 ;
+    color:rgb(186, 212, 192);
+    top:5%;
+    height:95%;
+    width: 100%;
+    position: fixed;
+    padding : 40px;
+
+}
+
+
+.madlibs{
+    border: 3.5px dotted rgb(45, 24, 50);
+    width: 90%;
+    height: 60%;
+    background-color: rgb(104, 207, 173);
+    padding: 10px;
+    color : #0d3233;
+}
+
+.tomthumb{
+    border: 3.5px dotted rgb(45, 24, 50);
+    width: 90%;
+    height: 70%;
+    background-color: rgb(104, 207, 173);
+    padding: 10px;
+    color : #0d3233;
+}
+
+.story{
+    margin-top: 10px;
+    display: block;
+    font-family: "Stencil Std, fantasy";
+    font-size: 95% ;
+}
+
+.size{
+    margin-top: 10px;
+    display: block;
+    font-family: "Stencil Std, fantasy";
+    font-size: 95% ;
+}
+
+.bb{
+    display: flex;
+    color:#05386B;
+    margin: 8px;
+}
+
+
+
+
+
+
+

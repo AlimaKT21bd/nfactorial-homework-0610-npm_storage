@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Games</title>
+
+</head>
+
+<body  >
+    <div class = "back" onload = "getValue()" >
+        <div class="header">
+            <h1 style="font-weight: bold; font-size: 50px;" ;>
+                ----GAMES----
+            </h1>
+        </div>
+        
+        <div class="container"   id = "back">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a class = "navbar_font" data-toggle="tab"  style="color: #05386B ; font-size: 20px; background-color: rgb(104, 207, 173);" ;
+                    href="#home">Home</a>
+                </li>
+                <li>
+                    <a class = "navbar_font" data-toggle="tab"  style="color: #05386B ; font-size: 20px; background-color: rgb(104, 207, 173);";
+                    href="#about">Madlibs</a>
+                </li>
+                <li>
+                    <a class = "navbar_font" data-toggle="tab"  style="color: #05386B ; font-size: 20px; background-color: rgb(104, 207, 173);";
+                    href="#team">Tom Thumb</a>
+                </li>
+
+                <div class="bb" >
+                    <div  onclick = "setWhiteTheme()" type = "button"  style="left: 55%; background-color: rgb(104, 207, 173);cursor: pointer; margin: 5px;">
+                        <i class="fa fa-solid fa-sun fa-2x"></i>
+                    </div>
+    
+                    <div  onclick = "setDarkTheme()" type = "button"  style="left: 65%; background-color: rgb(104, 207, 173);cursor: pointer; margin: 5px;">
+                        <i class="fa fa-duotone fa-moon fa-2x"></i>
+                    </div>
+                    <div  onclick = "setCookie()" type = "button"  style="left: 65%; background-color: rgb(104, 207, 173);cursor: pointer; margin: 5px;">
+                        <i class="fa fa-solid fa-cookie-bite fa-2x"></i>
+                    </div>
+                </div>
+
+            </ul>
+            
+        
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <div class="background">
+                        <div>
+                            <h2 style = "font-weight: bold;" ;> WELCOME TO GAMES!!</h2>
+                        </div>
+                        <img src = "img.jpg" style="height:45%; width: 27%;";>
+                       
+                    </div>
+                </div>
+                <div id="about" class="tab-pane fade">
+                    <div class="home">
+                        <h3>MAD LIBS</h3>
+                    </div>
+                    <div class="background">
+                        <div class="madlibs">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="person" >Person</label>
+                                    <input id="person" class="form-control person" type="text" placeholder="Enter a person ..">
+                                </div>
+                                <div class="form-group">
+                                    <label for="character">Character</label>
+                                    <input id="character" class="form-control character" type="text" placeholder="Enter an character ..">
+                                </div>
+                                <div class="form-group">
+                                    <label for="adverb">Adverb</label>
+                                    <input id="adverb" class="form-control adverb" type="text" placeholder="Enter a adverb ..">
+                                </div>
+                                <div class="form-group">
+                                    <label for="adjective">Adjective</label>
+                                    <input id="adjective" class="form-control adjective" type="text" placeholder="Enter an adjective ..">
+                                </div>
+                                <br>
+                                <button id="click" type="submit" class="btn_click">Tell Story<source>!</button>
+                                <div  class = "story" id = "story1">
+                                    <h4>Mad Libs story</h4>
+                                    <hr>
+                                    <p>One day <span class ="person"></span> decided to go to birthday party of <span class="character"></span>. <span class ="person"></span> prepared a /an <span class="adjective"></span> gift that the birthday boy/girl should have liked. but when <span class="person"></span>  was going to give the present very <span class ="adverb"></span> , cat of owner decided to do it instead in poopy way.</p>                 
+                                </div>
+                        </div>    
+                    </div>
+                </div>
+                <div id="team" class="tab-pane fade">
+                    <div class="home">
+                        <h3>TOM THUMB</h3>
+                    </div>
+                    <div class="background">
+                        <div class="tomthumb">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label for="wdth">Image width(px)</label>
+                                    <input id="wdth" class="form-control wdth" type="text" placeholder="Enter a width ..">
+                                </div>
+                                <div class="form-group">
+                                    <label for="hght">Image height(px)</label>
+                                    <input id="hght" class="form-control hght" type="text" placeholder="Enter a height..">
+                                </div>
+                                <div class="form-group">
+                                    <label for="numb">Number of Colors</label>
+                                    <input id="numb" class="form-control numb" type="text" placeholder="Enter a number ..">
+                                </div>
+                                <br>
+                                <button id="click" type="submit" class="btn_click2">Calculate File Size</button>
+                                <div  class = "size" id = "size2">
+                                    <br>
+                                    <p style="font-weight: bold ;">File is <span class ="size1"></span>KB which is OK.</p>                    
+                                </div>
+                          </div>    
+                    </div>
+                     
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src = "./index.js"></script>
+    <script>
+        const setWhiteTheme = () => {
+            const root = document.getElementById("back");
+            root.className = "light";
+            localStorage.setItem("theme", "light");
+        }
+    
+        function setDarkTheme(){
+            const root = document.getElementById("back");
+            root.className = "dark";
+            localStorage.setItem("theme", "dark");
+        }
+    
+        function getValue(){
+            const theme = localStorage.getItem("theme");
+            const root = document.getElementById("back");
+            root.className = theme;
+        }
+
+        const setCookie = () => {
+            document.cookie = "user: Pechenka; expires = Wed, 15 Jun 2022 9:00:00 GMT"
+        }
+    </script>
+</body>
+</html>
